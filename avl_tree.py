@@ -8,11 +8,12 @@ Description:
 '''
 
 class Node(object):
-    def __init__(self, value, left=None, right=None):
+    def __init__(self, value, left=None, right=None, parent=None):
         super(Node, self).__init__()
         self.value = value
         self.left = left
         self.right = right
+        self.parent = parent
 
     def __repr__(self):
         left_str = u""
@@ -43,18 +44,48 @@ class Tree(object):
     def delete(self, value):
         raise NotImplementedError()
 
-class AVLTree(Tree):
+    def __repr__(self):
+        return repr(self.root)
+
+class BinaryTree(Tree):
     def __init__(self, root=None):
-        super(AVLTree, self).__init__(root)
+        super(BinaryTree, self).__init__(root)
 
     def find(self, value):
         return _find_recursive(self.root, value)
 
     def _find_recursive(self, node, value):
-        pass
+        if node == None:
+            return None
+        elif node.value == value:
+            return node
+        elif node.value < value:
+            return self._find_recursive(node.right, value)
+        else:
+            return self._find_recursive(node.left, value)
 
-    def __repr__(self):
-        return repr(self.root)
+    def insert(self, value):
+        if self.root == None:
+            self.root = Node(value)
+        else:
+            self._insert_recursive(self.root, value)
+
+    def _insert_recursive(self, node, value):
+        if node.value < value:
+            if node.right == None:
+                node.right = Node(value)
+            else:
+                self._insert_recursive(node.right, value)
+        elif node.value > value:
+            if node.left == None:
+                node.left = Node(value)
+            else:
+                self._insert_recursive(node.left, value)
+
+class AVLTree(BinaryTree):
+    def __init__(self, root=None):
+        super(AVLTree, self).__init__(root)
+
 
 
 
