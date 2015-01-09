@@ -87,12 +87,12 @@ class BinaryTree(Tree):
     def _insert_recursive(self, node, value):
         if node.value < value:
             if node.right == None:
-                node.right = Node(value)
+                node.set_right(Node(value))
             else:
                 self._insert_recursive(node.right, value)
         elif node.value > value:
             if node.left == None:
-                node.left = Node(value)
+                node.set_left(Node(value))
             else:
                 self._insert_recursive(node.left, value)
 
@@ -106,6 +106,12 @@ class AVLTree(BinaryTree):
 def main():
     avl_tree = AVLTree()
     values = [23, 54, 72, 76, 50, 67, 17, 19, 12, 14, 9]
+    for value in values:
+        avl_tree.insert(value)
+    print repr(avl_tree)
+
+    avl_tree = AVLTree()
+    values = range(13)
     for value in values:
         avl_tree.insert(value)
     print repr(avl_tree)
