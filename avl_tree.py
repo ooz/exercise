@@ -15,6 +15,20 @@ class Node(object):
         self.right = right
         self.parent = parent
 
+    def set_left(self, node):
+        if self.left is not None:
+            self.left.parent = None
+        self.left = node
+        if node is not None:
+            node.parent = self
+
+    def set_right(self, node):
+        if self.right is not None:
+            self.right.parent = None
+        self.right = node
+        if node is not None:
+            node.parent = self
+
     def __repr__(self):
         left_str = u""
         if self.left != None:
