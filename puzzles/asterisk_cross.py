@@ -5,6 +5,18 @@ File: asterisk_cross.py
 Author: Oliver Zscheyge
 Description:
     http://workplace.stackexchange.com/questions/39004/which-weak-algorithmic-strategies-i-have-that-lead-me-to-failing-coding-this-sim
+
+Example:
+$ python asterisk_cross.py 9
+*       *
+ *     *
+  *   *
+   * *
+    *
+   * *
+  *   *
+ *     *
+*       *
 '''
 
 import sys
