@@ -71,9 +71,9 @@ class BinaryTree(Tree):
     def _find_recursive(self, node, value):
         if node == None:
             return None
-        elif node.value == value:
+        elif value == node.value:
             return node
-        elif node.value < value:
+        elif value > node.value:
             return self._find_recursive(node.right, value)
         else:
             return self._find_recursive(node.left, value)
@@ -85,12 +85,12 @@ class BinaryTree(Tree):
             self._insert_recursive(self.root, value)
 
     def _insert_recursive(self, node, value):
-        if node.value < value:
+        if value > node.value:
             if node.right == None:
                 node.set_right(Node(value))
             else:
                 self._insert_recursive(node.right, value)
-        elif node.value > value:
+        elif value < node.value:
             if node.left == None:
                 node.set_left(Node(value))
             else:
@@ -101,7 +101,6 @@ class BinaryTree(Tree):
             self.root = self._delete_recursive(self.root, value)
         else:
             successor = self._delete_recursive(self.root, value)
-            print successor
 
     def _delete_recursive(self, root, value):
         if root is not None:
