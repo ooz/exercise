@@ -96,26 +96,68 @@ class BinaryTree(Tree):
             else:
                 self._insert_recursive(node.left, value)
 
+    def delete(self, value):
+        if self.root.value == value:
+            self.root = self._delete_recursive(self.root, value)
+        else:
+            successor = self._delete_recursive(self.root, value)
+            print successor
+
+    def _delete_recursive(self, root, value):
+        if root is not None:
+            if value < root.value:
+                root.left = self._delete_recursive(root.left, value)
+            elif value > root.value:
+                root.right = self._delete_recursive(root.right, value)
+            else:
+                if root.left is None:
+                    return root.right
+                elif root.right is None:
+                    return root.left
+                else:
+                    successor = self._search_successor(root)
+                    successor.set_left(root.left)
+                    successor.set_right(root.right)
+                    root.parent = None
+                    return successor
+
+    def _search_successor(self, node):
+        if node.right.left is None:
+            successor = node.right
+            node.set_right(node.right.right)
+            return successor
+        else:
+            node = node.right
+            while node.left.left is not None:
+                node = node.left
+            successor = node.left
+            node.set_left(node.left.right)
+            return successor
+
+
 class AVLTree(BinaryTree):
     def __init__(self, root=None):
         super(AVLTree, self).__init__(root)
 
 
 
-
-def main():
+if __name__ == '__main__':
     avl_tree = AVLTree()
     values = [23, 54, 72, 76, 50, 67, 17, 19, 12, 14, 9]
     for value in values:
         avl_tree.insert(value)
+        print repr(avl_tree)
+
+    avl_tree.delete(50)
     print repr(avl_tree)
 
     avl_tree = AVLTree()
     values = range(13)
     for value in values:
         avl_tree.insert(value)
+        print repr(avl_tree)
+
+    avl_tree.delete(0)
     print repr(avl_tree)
-
-if __name__ == '__main__':
-    main()
-
+    avl_tree.delete(11)
+    print repr(avl_tree)
