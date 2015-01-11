@@ -139,7 +139,7 @@ class BinaryTree(Tree):
 
         return root
 
-    def _search_successor(self, node):
+    def _find_successor(self, node):
         return self._find_left_most(node.right)
 
     def _find_left_most(self, node):
