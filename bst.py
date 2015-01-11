@@ -79,9 +79,9 @@ class Tree(object):
     def __str__(self):
         return self.__unicode__()
 
-class BinaryTree(Tree):
+class BinarySearchTree(Tree):
     def __init__(self, root=None):
-        super(BinaryTree, self).__init__(root)
+        super(BinarySearchTree, self).__init__(root)
 
     def find(self, value):
         return _find_recursive(self.root, value)
@@ -149,7 +149,7 @@ class BinaryTree(Tree):
         return current
 
 
-class AVLTree(BinaryTree):
+class AVLTree(BinarySearchTree):
     def __init__(self, root=None):
         super(AVLTree, self).__init__(root)
 
