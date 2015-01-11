@@ -122,9 +122,9 @@ class BinaryTree(Tree):
             return None
 
         if value < root.value:
-            root.left = self._delete_recursive(root.left, value)
+            root.set_left(self._delete_recursive(root.left, value))
         elif value > root.value:
-            root.right = self._delete_recursive(root.right, value)
+            root.set_right(self._delete_recursive(root.right, value))
         else:
             if root.left is None:
                 root.parent = None
@@ -133,9 +133,9 @@ class BinaryTree(Tree):
                 root.parent = None
                 return root.left
 
-            successor = self._search_successor(root)
+            successor = self._find_successor(root)
             root.value = successor.value
-            root.right = self._delete_recursive(root.right, successor.value)
+            root.set_right(self._delete_recursive(root.right, successor.value))
 
         return root
 
