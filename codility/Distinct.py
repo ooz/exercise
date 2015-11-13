@@ -11,3 +11,5 @@ def solution(A):
         values[elem] = 1
     return len(values.keys())
 
+def better_solution(A):
+    return len(set(A))
