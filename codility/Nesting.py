@@ -18,3 +18,16 @@ def solution(S):
     if stack_size == 0:
         return 1
     return 0
+
+def better_solution(S):
+    stack_size = 0
+    for c in S:
+        if c == "(":
+            stack_size += 1
+        elif c == ")":
+            stack_size -= 1
+        if stack_size < 0:
+            return 0
+    if stack_size == 0:
+        return 1
+    return 0
