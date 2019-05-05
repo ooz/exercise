@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import java.util.Collections;
 import java.util.List;
@@ -12,12 +11,12 @@ import java.util.Random;
 import java.util.UUID;
 
 import static java.util.stream.Collectors.toList;
+import static lombok.AccessLevel.PACKAGE;
 import static lombok.AccessLevel.PRIVATE;
 
 @Getter
 @NoArgsConstructor(access = PRIVATE) // for jackson
-@Setter(PRIVATE) // for jackson
-@ToString
+@Setter(PACKAGE) // for jackson and the GameRepository
 public class Game {
 
     private static final String GOL_STATES = "01";

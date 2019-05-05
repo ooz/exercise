@@ -24,10 +24,21 @@ public class GameControllerTest {
     HttpClient client;
 
     Game game;
+    String gameId;
 
     @Test
     public void should_create_initial_game_board() {
         whenGameIsCreated();
+
+        thenGameBoardHasInitialSize();
+    }
+
+    @Test
+    public void should_get_game_board() {
+        // given
+        should_create_initial_game_board();
+
+        whenGameIsFetched();
 
         thenGameBoardHasInitialSize();
     }
@@ -40,8 +51,17 @@ public class GameControllerTest {
         game = response.getBody().get();
     }
 
+    private void whenGameIsFetched() {
+        HttpResponse<Game> response = client.toBlocking().exchange(
+            HttpRequest.GET("/games/" + gameId),
+        Game.class);
+
+        game = response.getBody().get();
+    }
+
     private void thenGameBoardHasInitialSize() {
-        assertFalse(game.getId().toString().isEmpty());
+        gameId = game.getId().toString();
+        assertFalse(gameId.isEmpty());
 
         int columns = 10;
         int rows = 10;

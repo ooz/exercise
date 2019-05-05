@@ -3,6 +3,7 @@
 Minimal test project for micronaut using the Game of Life (GoL) kata.
 
 Exposes a JSON REST API that allows you to create, get and update GoL boards.
+The application is stateless, all created boards just live in-memory.
 
 ## Development
 
