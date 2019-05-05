@@ -15,7 +15,7 @@ public class GameController {
 
     @Post
     public Game create() {
-        return gameRepository.save(new Game(10, 10));
+        return gameRepository.save(Game.random(10, 10));
     }
 
     @Get("/{id}")

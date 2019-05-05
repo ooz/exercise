@@ -29,19 +29,13 @@ public class Game {
 
     private int ageInTicks;
 
-    public Game(int columns, int rows) {
-        id = UUID.randomUUID();
-        board = String.join("\n", randomLines(rows, columns));
-        ageInTicks = 0;
-    }
-
-    private List<String> randomLines(int count, int lineLength) {
+    private static List<String> randomLines(int count, int lineLength) {
         return Collections.nCopies(count, "").stream()
                 .map(line -> randomLine(lineLength))
                 .collect(toList());
     }
 
-    private String randomLine(int length) {
+    private static String randomLine(int length) {
         StringBuilder line = new StringBuilder(length);
 
         for (int i = 0; i < length; i++) {
@@ -49,6 +43,13 @@ public class Game {
         }
 
         return line.toString();
+    }
+
+    public static Game random(int columns, int rows) {
+        Game game = new Game();
+        game.setBoard(String.join("\n", randomLines(rows, columns)));
+        game.setAgeInTicks(0);
+        return game;
     }
 
 }
