@@ -6,7 +6,6 @@ import io.micronaut.http.client.HttpClient;
 import io.micronaut.http.client.annotation.Client;
 import io.micronaut.runtime.server.EmbeddedServer;
 import io.micronaut.test.annotation.MicronautTest;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
@@ -15,7 +14,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @MicronautTest
-@Slf4j
 public class GameControllerTest {
 
     @Inject
@@ -40,8 +38,6 @@ public class GameControllerTest {
                 Game.class);
 
         game = response.getBody().get();
-
-        log.info(game.toString());
     }
 
     private void thenGameBoardHasInitialSize() {
