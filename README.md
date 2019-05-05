@@ -1,4 +1,5 @@
 # Exercise
 
- Various algorithm and data structures exercises to stay fit in CS basics. 
- 
+* Algorithm and data structures exercises to stay fit in CS basics
+* Experiments with frameworks and libraries
+
