@@ -18,12 +18,15 @@ public class InMemoryGameRepository implements GameRepository {
 
     @Override
     public Game save(Game game) {
-        UUID id;
-        do {
-            id = UUID.randomUUID();
-        } while (games.containsKey(id));
+        UUID id = game.getId();
 
-        game.setId(id);
+        if (id == null) {
+            do {
+                id = UUID.randomUUID();
+            } while (games.containsKey(id));
+            game.setId(id);
+        }
+
         games.put(id, game);
         return games.get(id);
     }

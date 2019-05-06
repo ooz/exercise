@@ -17,7 +17,7 @@ public class Game {
 
     public static final char ALIVE = '1';
     public static final char DEAD = '0';
-    private static final String GOL_STATES = Arrays.toString(new char[] {DEAD, ALIVE});
+    private static final String GOL_STATES = new String(new char[] {DEAD, ALIVE});
     private static final Random RNG = new Random();
 
     @JsonProperty("_id")

@@ -43,6 +43,16 @@ public class GameControllerTest {
         thenGameBoardHasInitialSize();
     }
 
+    @Test
+    public void should_tick_game_board() {
+        // given
+        should_create_initial_game_board();
+
+        whenGameIsTicked();
+
+        thenGameBoardHasTicked();
+    }
+
     private void whenGameIsCreated() {
         HttpResponse<Game> response = client.toBlocking().exchange(
                 HttpRequest.POST("/games", ""),
@@ -59,6 +69,14 @@ public class GameControllerTest {
         game = response.getBody().get();
     }
 
+    private void whenGameIsTicked() {
+        HttpResponse<Game> response = client.toBlocking().exchange(
+                HttpRequest.POST("/games/" + gameId, ""),
+                Game.class);
+
+        game = response.getBody().get();
+    }
+
     private void thenGameBoardHasInitialSize() {
         gameId = game.getId().toString();
         assertFalse(gameId.isEmpty());
@@ -69,6 +87,19 @@ public class GameControllerTest {
         int expectedBoardCharacterCount= columns * rows + newlines;
         assertEquals(expectedBoardCharacterCount, game.getBoard().length());
 
-        assertEquals(game.getAgeInTicks(), 0);
+        assertEquals(0, game.getAgeInTicks());
+    }
+
+    private void thenGameBoardHasTicked() {
+        gameId = game.getId().toString();
+        assertFalse(gameId.isEmpty());
+
+        int columns = 10;
+        int rows = 10;
+        int newlines = rows - 1;
+        int expectedBoardCharacterCount= columns * rows + newlines;
+        assertEquals(expectedBoardCharacterCount, game.getBoard().length());
+
+        assertEquals(1, game.getAgeInTicks());
     }
 }

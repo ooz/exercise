@@ -24,4 +24,12 @@ public class GameController {
                 .findById(id)
                 .orElse(null);
     }
+
+    @Post("/{id}")
+    public Game tick(UUID id) {
+        return gameRepository
+                .findById(id)
+                .map(game -> gameRepository.save(game.tick()))
+                .orElse(null);
+    }
 }
