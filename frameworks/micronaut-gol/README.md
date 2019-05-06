@@ -18,3 +18,9 @@ The application is stateless, all created boards just live in-memory.
 ```
 ./gradlew run
 ```
+
+Possible operations:
+
+* `POST /games` - create a new GoL
+* `GET /games/{id}` - fetch details of a specific GoL
+* `POST /games/{id}` - perform one tick for this GoL
