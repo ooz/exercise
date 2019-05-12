@@ -1,4 +1,4 @@
-package java.jsonpath;
+package jv.jsonpath;
 
 import io.micronaut.configuration.picocli.PicocliRunner;
 import io.micronaut.context.ApplicationContext;
@@ -21,7 +21,6 @@ public class JavaJsonpathCommandTest {
             String[] args = new String[] { "-v" };
             PicocliRunner.run(JavaJsonpathCommand.class, ctx, args);
 
-            // java-jsonpath
             assertTrue(baos.toString().contains("Hi!"));
         }
     }

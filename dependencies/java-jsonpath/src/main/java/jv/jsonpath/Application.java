@@ -1,4 +1,4 @@
-package java.jsonpath;
+package jv.jsonpath;
 
 import io.micronaut.runtime.Micronaut;
 

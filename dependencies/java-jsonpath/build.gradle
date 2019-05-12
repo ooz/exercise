@@ -10,7 +10,7 @@ plugins {
 
 
 version "0.1"
-group "java.jsonpath"
+group "jv.jsonpath"
 
 repositories {
     mavenCentral()
@@ -41,10 +41,12 @@ dependencies {
     testCompile "io.micronaut.test:micronaut-test-junit5"
     testCompile "io.micronaut:micronaut-inject-java"
     testRuntime "org.junit.jupiter:junit-jupiter-engine"
+
+    testCompile group: 'com.jayway.jsonpath', name: 'json-path-assert', version: '2.4.0'
 }
 
 test.classpath += configurations.developmentOnly
-mainClassName = "java.jsonpath.JavaJsonpathCommand"
+mainClassName = "jv.jsonpath.JavaJsonpathCommand"
 
 jar {
     manifest {

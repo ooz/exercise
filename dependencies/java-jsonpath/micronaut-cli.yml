@@ -1,5 +1,5 @@
 profile: cli
-defaultPackage: java.jsonpath
+defaultPackage: jv.jsonpath
 ---
 testFramework: junit
 sourceLanguage: java
