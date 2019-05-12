@@ -53,7 +53,9 @@ public class JsonpathTest {
 
     /**
      * There is no way to get the list of object keys using Jayway's implementation of jsonpath.
-     * Thus we extract the object as a Java Map and get the key set.
+     * Other implementations provide the "keys()" function.
+     *
+     * In Java, extracting the object as a Java Map and getting the key set seems to be the way to go.
      */
     @Test
     public void testExtractingJsonObjectKeys() {
