@@ -24,3 +24,10 @@ Possible operations:
 * `POST /games` - create a new GoL
 * `GET /games/{id}` - fetch details of a specific GoL
 * `POST /games/{id}` - perform one tick for this GoL
+
+## Lessons learned
+
+* Micronaut having problems injecting/resolving beans despite everything looking fine? Phantom error! Clean and rebuild!
+* Not having exercised GoL in a while, I wasted unnecessary time getting a basic implementation. Errors due to Java primitives and primitive obsession
+* It was fun to do this with micronaut. I like the expressive, low bloat approach
+
