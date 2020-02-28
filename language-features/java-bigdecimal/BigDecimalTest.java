@@ -20,8 +20,14 @@ public class BigDecimalTest {
         System.out.println(doubleFromDouble.doubleValue());
 
         assert fromValueOfDouble.compareTo(fromDouble) != 0;
+        // but...
+        assert fromValueOfDouble.doubleValue() == 0.1d;
+        assert fromDouble.doubleValue() == 0.1d;
+
         assert fromValueOfDouble.compareTo(fromString) == 0;
+        assert doubleFromDouble.doubleValue() == 0.1d;
         assert doubleFromString.doubleValue() == doubleFromDouble.doubleValue();
+
     }
 
 }
