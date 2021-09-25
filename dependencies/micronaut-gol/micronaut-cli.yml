@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micronaut.gol
+---
+testFramework: junit
+sourceLanguage: java

@@ -1,0 +1,55 @@
+plugins {
+    id "io.spring.dependency-management" version "1.0.6.RELEASE"
+    id "java"
+    id "net.ltgt.apt-eclipse" version "0.21"
+    id "net.ltgt.apt-idea" version "0.21"
+    id "com.github.johnrengelman.shadow" version "4.0.2"
+    id "application"
+}
+
+
+
+version "0.1"
+group "jv.jsonpath"
+
+repositories {
+    mavenCentral()
+    maven { url "https://jcenter.bintray.com" }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom 'io.micronaut:micronaut-bom:1.1.0'
+    }
+}
+
+configurations {
+    // for dependencies that are needed for development only
+    developmentOnly
+}
+
+dependencies {
+    testCompile "org.junit.jupiter:junit-jupiter-api"
+    testRuntime "org.junit.jupiter:junit-jupiter-engine"
+
+    testCompile group: 'com.jayway.jsonpath', name: 'json-path', version: '2.4.0'
+}
+
+test.classpath += configurations.developmentOnly
+mainClassName = "jv.jsonpath.JavaJsonpathCommand"
+
+// use JUnit 5 platform
+test {
+    useJUnitPlatform()
+}
+tasks.withType(JavaCompile){
+    options.encoding = "UTF-8"
+    options.compilerArgs.add('-parameters')
+}
+
+shadowJar {
+    mergeServiceFiles()
+}
+
+run.classpath += configurations.developmentOnly
+run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1', '-Dcom.sun.management.jmxremote')
