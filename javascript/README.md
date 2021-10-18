@@ -23,3 +23,7 @@ Study goals:
 
 > [There is only one value in JavaScript that is not equal to itself, and that is NaN (“not a number”).](https://eloquentjavascript.net/01_values.html#p_tLooHn2QPj)
 > [NaN is supposed to denote the result of a nonsensical computation, and as such, it isn’t equal to the result of any other nonsensical computations.](https://eloquentjavascript.net/01_values.html#p_rcMZUIfGYR)
+
+### 2. Program Structure
+
+
