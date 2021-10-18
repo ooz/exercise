@@ -1,6 +1,6 @@
 # JavaScript
 
-I recently discovered [Eloquent JavaScript](https://eloquentjavascript.net) which seems to be a common introduction to both programming and JavaScript (e.g. for bootcamp students).
+I recently discovered ["Eloquent JavaScript" by M. Haverbeke](https://eloquentjavascript.net) which seems to be a common introduction to both programming and JavaScript, e.g. for bootcamp students.
 So far, I followed a conservative philosophy of "the least amount of JS you can get away with" and thus my JS skills are limited:
 
 * Static page tools: [Lifetime Clock](https://oliz.io/lifetime-clock/), [Kitchen Cleaning Plan](https://github.com/ooz/kitchen-cleaning-plan) ([with tests run in browser](https://oliz.io/kitchen-cleaning-plan/test.html))
