@@ -17,5 +17,9 @@ Study goals:
 
 ## Learnings
 
-* > [Calculations with whole numbers [...] smaller than the aforementioned 9 quadrillion are guaranteed to always be precise.](https://eloquentjavascript.net/01_values.html#p_8KgYC0F1fX)
+### 1. Values, Types, and Operators
 
+> [Calculations with whole numbers [...] smaller than the aforementioned 9 quadrillion are guaranteed to always be precise.](https://eloquentjavascript.net/01_values.html#p_8KgYC0F1fX)
+
+> [There is only one value in JavaScript that is not equal to itself, and that is NaN (“not a number”).](https://eloquentjavascript.net/01_values.html#p_tLooHn2QPj)
+> [NaN is supposed to denote the result of a nonsensical computation, and as such, it isn’t equal to the result of any other nonsensical computations.](https://eloquentjavascript.net/01_values.html#p_rcMZUIfGYR)
