@@ -33,3 +33,8 @@ Study goals:
 
 ### 3. Functions
 
+
+
+## Further Reads
+
+* [WTF JS: List of tricky JavaScript examples](https://github.com/denysdovhan/wtfjs)
