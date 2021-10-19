@@ -26,4 +26,10 @@ Study goals:
 
 ### 2. Program Structure
 
+* [For beginners, the author recommends to always terminate statements with semicolons, because omission rules are non-trivial.](https://eloquentjavascript.net/02_program_structure.html#p_z/83KOxUGo)
+* [`let` defines a *binding* (aka variable)](https://eloquentjavascript.net/02_program_structure.html#p_jG4q4gLJDw)
+* [There's no reason to use `var` over `let` in modern JS](https://eloquentjavascript.net/02_program_structure.html#p_IvQMyQVoj9)
+* [Write JS in camelCase](https://eloquentjavascript.net/02_program_structure.html#p_GveY0yoCxZ)
+
+### 3. Functions
 
