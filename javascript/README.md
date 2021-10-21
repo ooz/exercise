@@ -69,6 +69,13 @@ Study goals:
 * [Use `Object.assign(left, right)` to copy all properties from `right` to `left`](https://eloquentjavascript.net/04_data.html#p_z4/OPZzTTK)
 * [`typeof []` is `"object"`](https://eloquentjavascript.net/04_data.html#p_Rl8msr9DUz)
 * [`==` checks for identity (reference to same object), not (deep) equality of contents](https://eloquentjavascript.net/04_data.html#p_wD7jhXt+Tr)
+* [`{some, other}` is a shorthand for `{some: some, other: other}`](https://eloquentjavascript.net/04_data.html#c_CI+dtzXW/x)
+
+([nice phi coefficient example to measure correlation between two variables](https://eloquentjavascript.net/04_data.html#p_mq//xARuKm))
+
+* [`array.includes(elem)` checks whether `elem` is in `array`](https://eloquentjavascript.net/04_data.html#p_1/7IsMpwdF)
+
+PAUSED AT https://eloquentjavascript.net/04_data.html#h_4WwZLib71C (array loops)
 
 
 
