@@ -65,6 +65,10 @@ Study goals:
 
 * [`array.length` and `array["length"]` are the same](https://eloquentjavascript.net/04_data.html#p_Bcq+Q3kiI4)
 * [Use binary `in` operator to check whether an object has a property, use unary `delete` operator to delete a property from an object](https://eloquentjavascript.net/04_data.html#c_66M3B1wG98)
+* [Use `Object.keys(myObj)` to get all property names of object `myObj`](https://eloquentjavascript.net/04_data.html#p_SvMW6lxfp+)
+* [Use `Object.assign(left, right)` to copy all properties from `right` to `left`](https://eloquentjavascript.net/04_data.html#p_z4/OPZzTTK)
+* [`typeof []` is `"object"`](https://eloquentjavascript.net/04_data.html#p_Rl8msr9DUz)
+* [`==` checks for identity (reference to same object), not (deep) equality of contents](https://eloquentjavascript.net/04_data.html#p_wD7jhXt+Tr)
 
 
 
