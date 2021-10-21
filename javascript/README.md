@@ -64,6 +64,7 @@ Study goals:
     - The second way may be used to work around invalid property names e.g. starting with numbers
 
 * [`array.length` and `array["length"]` are the same](https://eloquentjavascript.net/04_data.html#p_Bcq+Q3kiI4)
+* [Use binary `in` operator to check whether an object has a property, use unary `delete` operator to delete a property from an object](https://eloquentjavascript.net/04_data.html#c_66M3B1wG98)
 
 
 
