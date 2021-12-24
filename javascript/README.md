@@ -74,9 +74,18 @@ Study goals:
 ([nice phi coefficient example to measure correlation between two variables](https://eloquentjavascript.net/04_data.html#p_mq//xARuKm))
 
 * [`array.includes(elem)` checks whether `elem` is in `array`](https://eloquentjavascript.net/04_data.html#p_1/7IsMpwdF)
+* Further array methods: `shift` (pop first element), `unshift` (insert at beginning of array), `indexOf` (find first), `lastIndexOf` (find last), `slice`, `concat`
+* For strings, `indexOf` can also search for substrings with length greater than 1
+* [String padding with `padStart`](https://eloquentjavascript.net/04_data.html#p_pSkK9k9R0g)
+* Further string methods: `trim`, `split`, `join`, `repeat`
+* [Rest parameters and spread operator `...`](https://eloquentjavascript.net/04_data.html#h_hX9DkIBp9y)
+* [Re-using a name for a binding defined with `let` or `const` will trigger a warning, but not for `var` or `function`!](https://eloquentjavascript.net/04_data.html#p_6OHrUF+WEc)
+* [Destructuring arrays and objects](https://eloquentjavascript.net/04_data.html#h_B372u36cp6)
+* [`JSON.stringify` and `JSON.parse`](https://eloquentjavascript.net/04_data.html#p_1IU60Zh2Af)
 
-PAUSED AT https://eloquentjavascript.net/04_data.html#h_4WwZLib71C (array loops)
+### 5. Higher-Order Functions
 
+https://eloquentjavascript.net/05_higher_order.html
 
 
 ## Further Reads
