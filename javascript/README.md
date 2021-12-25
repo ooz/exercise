@@ -85,7 +85,7 @@ Study goals:
 
 ### 5. Higher-Order Functions
 
-* `forEach`, `filter`, `map` and `reduce` are built-in. [`reduce` is clever with the start element]()
+* `forEach`, `filter`, `map` and `reduce` are built-in. [`reduce` is clever with the start element](https://eloquentjavascript.net/05_higher_order.html#p_r9cFmJJTar)
 * `some` tests whether at least one element satisfies the given predicate
 * `every` tests whether all elements in an array satisfy the given predicate
 * `findIndex` returns the index of the first element satisfying the given predicate
