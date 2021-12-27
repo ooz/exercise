@@ -118,6 +118,7 @@ Study goals:
     ```
 
 * `new` is used to invoke a constructor function
+* By convention, private property names start with `_`
 * [A constructor function can be seen as a type/class from other languages. Its prototype defines the set of methods](https://eloquentjavascript.net/06_object.html#p_j8irpNziDb)
 * [Capitalize constructor function names (again, matching other languages' class feature)](https://eloquentjavascript.net/06_object.html#p_DJG7BO1oTU)
 * [Same can be achieved with the `class` notation and defining the special `constructor` method inside a class](https://eloquentjavascript.net/06_object.html#h_hPv1gHC33s)
@@ -141,7 +142,30 @@ Maps:
 
 Polymorphism and Symbols:
 
-* JS supports polymorphism. Objects fulfill an interface, if they have properties with matching names (more exact: matching symbols)
+* JS supports polymorphism. Objects fulfill an interface, if they have properties with matching names (or matching symbols)
+* [Each `Symbol` is unique, even when created with the same name](https://eloquentjavascript.net/06_object.html#p_7p+O+Qr4bN)
+
+Iterators:
+
+* Objects fulfill the iterator interface when they [have a method labeled with the `Symbol.iterator` symbol](https://eloquentjavascript.net/06_object.html#h_z2tOOXM8qO)
+* [String iterator example](https://eloquentjavascript.net/06_object.html#p_wSWGcm7dId), [custom matrix iterator example](https://eloquentjavascript.net/06_object.html#p_rqXAzunzIi)
+
+Getters, setters, static:
+
+* [´get`, `set` keywords define opaque getter/setter functions that look like regular field properties](https://eloquentjavascript.net/06_object.html#h_3vwredi8nD)
+* [`static` functions are bound to the constructor (class name), not to the prototype](https://eloquentjavascript.net/06_object.html#p_MwIs1kR0mD)
+
+Inheritance:
+
+* [`extend` keyword extends a class from another prototype than the default `Object.prototype`](https://eloquentjavascript.net/06_object.html#p_a3GMshNFYT)
+* Use `super` to call superclass constructor and `super.propertyName` to use superclass property `propertyName`
+* Use `instanceof` operator to check whether an object has some class (constructor) somewhere in its inheritance hierarchy
+
+### 8. ???
+
+
+
+
 
 ## Further Reads
 
