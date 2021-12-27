@@ -44,7 +44,7 @@ Study goals:
     ```
 
     - `hello1` and `hello2` use binding notation (binding a function value to the respective names)
-    - `hello2` uses arrow syntax, which is the same as `hello1` for the most part ([difference will be revealed in chapter 6](https://eloquentjavascript.net/03_functions.html#p_UKyLgbrDUa)
+    - `hello2` uses arrow syntax, which is the same as `hello1` for the most part (difference revealed in chapter 6: [arrow functions do not bind `this`, but see `this` of the surrounding scope](https://eloquentjavascript.net/06_object.html#p_C4AqzW0fAV))
     - `hello3`-style function declarations are read before the JS program is executed, so the function can be used before it is defined. `hello1` and `hello2` need to be defined before their usage
     - Also mind the semicolon terminating `hello1` and `hello2` definitions
 
