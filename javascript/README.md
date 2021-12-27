@@ -94,8 +94,33 @@ Study goals:
 
 ### 6. The Secret Life of Objects
 
-https://eloquentjavascript.net/06_object.html
+`this`:
 
+* `this` points to the object a method was called on
+* [This works even for functions assigned to objects later](https://eloquentjavascript.net/06_object.html#p_N+6e0UGvFo). [Using the `call` method on a function, the `this` context can be set explicitly](https://eloquentjavascript.net/06_object.html#p_llBwR5t6LB)
+* [Arrow functions do not bind `this`, but see the `this` of the surrounding scope](https://eloquentjavascript.net/06_object.html#p_C4AqzW0fAV)
+
+[Prototypes](https://eloquentjavascript.net/06_object.html#h_SumMlRB7yn):
+
+* Unknown properties are requested from an object's prototype and from the prototype's prototype etc.
+* The root prototype is `Object.prototype`
+* `Object.getPrototypeOf` gets the prototype of the passed object. The prototype of the root prototype is `null`
+* [Functions derive from `Function.prototype` and arrays from `Array.prototype`](https://eloquentjavascript.net/06_object.html#p_j+MLWf3JXr)
+* [`Object.create` is used to create an object of a given prototype](https://eloquentjavascript.net/06_object.html#p_H2XhzSHHJP)
+* [Shorthand for defining a method in an object (notice `speak`)](https://eloquentjavascript.net/06_object.html#c_gSGrvGTpkW):
+
+    ```js
+    let protoRabbit = {
+      speak(line) {
+        console.log(`The ${this.type} rabbit says '${line}'`);
+      }
+    };
+    ```
+
+* `new` is used to invoke a constructor function
+* [A constructor function can be seen as a type/class from other languages. Its prototype defines the set of methods](https://eloquentjavascript.net/06_object.html#p_j8irpNziDb)
+* [Capitalize constructor function names (again, matching other languages' class feature)](https://eloquentjavascript.net/06_object.html#p_DJG7BO1oTU)
+* [Same can be achieved with the `class` notation and defining the special `constructor` method inside a class](https://eloquentjavascript.net/06_object.html#h_hPv1gHC33s)
 
 ## Further Reads
 
