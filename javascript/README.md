@@ -89,7 +89,7 @@ Study goals:
 * `some` tests whether at least one element satisfies the given predicate
 * `every` tests whether all elements in an array satisfy the given predicate
 * `findIndex` returns the index of the first element satisfying the given predicate
-* [JavaScript strings use UTF-16 encoding](https://eloquentjavascript.net/05_higher_order.html#p_UsDhhqR3EH)
+* [JS strings use UTF-16 encoding](https://eloquentjavascript.net/05_higher_order.html#p_UsDhhqR3EH)
 * [Some problems when using string `length` and index access. `charCodeAt` and `codePointAt` are tricky, too](https://eloquentjavascript.net/05_higher_order.html#p_iQl/Gok4Mf)
 
 ### 6. The Secret Life of Objects
