@@ -137,7 +137,7 @@ Maps:
 * [JS has a `Map` class](https://eloquentjavascript.net/06_object.html#p_nIsq9E5wmZ) with `set`, `get` and `has` operations
 * [`Object.keys` returns only an object's own properties, not the ones from its prototype](https://eloquentjavascript.net/06_object.html#p_tx3xnowcEp)
 * The `in` operator checks for the property both in the object and its prototype
-* The `hasOwnProperty` checks only for the object's properties, not those from the prototype
+* The `hasOwnProperty` method checks only for the object's properties, not those from the prototype
 
 Polymorphism and Symbols:
 
