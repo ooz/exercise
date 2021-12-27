@@ -121,6 +121,27 @@ Study goals:
 * [A constructor function can be seen as a type/class from other languages. Its prototype defines the set of methods](https://eloquentjavascript.net/06_object.html#p_j8irpNziDb)
 * [Capitalize constructor function names (again, matching other languages' class feature)](https://eloquentjavascript.net/06_object.html#p_DJG7BO1oTU)
 * [Same can be achieved with the `class` notation and defining the special `constructor` method inside a class](https://eloquentjavascript.net/06_object.html#h_hPv1gHC33s)
+* [Class name is optional for class expressions](https://eloquentjavascript.net/06_object.html#p_pp17mMu8If). Q: what's the use-case for class expressions?
+* Overriding of properties can be done on prototype- and object-level (instance-level)
+
+Maps:
+
+* [Using normal objects as maps is dangerous](https://eloquentjavascript.net/06_object.html#h_gAcc11EHzV), e.g. because they contain additional "keys" due to inheriting properties from `Object.prototype`
+* [One solution is to create objects with `null` prototype and use them as maps](https://eloquentjavascript.net/06_object.html#p_enf1/9ItBM):
+
+    ```js
+    let map = Object.create(null);
+    ```
+
+* Object property names must be strings. So when using an object as a map, only string keys are allowed
+* [JS has a `Map` class](https://eloquentjavascript.net/06_object.html#p_nIsq9E5wmZ) with `set`, `get` and `has` operations
+* [`Object.keys` returns only an object's own properties, not the ones from its prototype](https://eloquentjavascript.net/06_object.html#p_tx3xnowcEp)
+* The `in` operator checks for the property both in the object and its prototype
+* The `hasOwnProperty` checks only for the object's properties, not those from the prototype
+
+Polymorphism and Symbols:
+
+* JS supports polymorphism. Objects fulfill an interface, if they have properties with matching names (more exact: matching symbols)
 
 ## Further Reads
 
