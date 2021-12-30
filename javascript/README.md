@@ -161,10 +161,13 @@ Inheritance:
 * Use `super` to call superclass constructor and `super.propertyName` to use superclass property `propertyName`
 * Use `instanceof` operator to check whether an object has some class (constructor) somewhere in its inheritance hierarchy
 
-### 8. ???
+### 7. Project: A Robot
 
+* [`Object.freeze` makes an object immutable, all write operations are ignored](https://eloquentjavascript.net/07_robot.html#h_BgRu2ZQp4Z)
 
+### 8. Bugs and Errors
 
+*
 
 
 ## Further Reads
