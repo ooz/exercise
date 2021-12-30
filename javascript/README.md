@@ -152,7 +152,7 @@ Iterators:
 
 Getters, setters, static:
 
-* [´get`, `set` keywords define opaque getter/setter functions that look like regular field properties](https://eloquentjavascript.net/06_object.html#h_3vwredi8nD)
+* [`get`, `set` keywords define opaque getter/setter functions that look like regular field properties](https://eloquentjavascript.net/06_object.html#h_3vwredi8nD)
 * [`static` functions are bound to the constructor (class name), not to the prototype](https://eloquentjavascript.net/06_object.html#p_MwIs1kR0mD)
 
 Inheritance:
@@ -165,10 +165,23 @@ Inheritance:
 
 * [`Object.freeze` makes an object immutable, all write operations are ignored](https://eloquentjavascript.net/07_robot.html#h_BgRu2ZQp4Z)
 
-### 8. Bugs and Errors
+### [8. Bugs and Errors](https://eloquentjavascript.net/08_error.html)
 
-*
+* Enable strict mode by writing the following line at the beginning of a file or function body:
 
+    ```js
+    "use strict";
+    ```
+
+* Strict mode reports:
+
+    - Usage of undefined bindings (normally, they'd be created implicitly in global scope)
+    - `this` will be `undefined` in function scope when the function is not used as a method (normally, `this` would then refer to global scope)
+    - Defining function parameters with the same name
+    - Removes `with` statement and other problematic language features
+
+* [Calling constructors defined with `class` keyword without `new` will always result in an error](https://eloquentjavascript.net/08_error.html#p_WGJIyAOZ/i)
+* Use [TypeScript](https://www.typescriptlang.org/)
 
 ## Further Reads
 
