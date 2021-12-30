@@ -165,7 +165,7 @@ Inheritance:
 
 * [`Object.freeze` makes an object immutable, all write operations are ignored](https://eloquentjavascript.net/07_robot.html#h_BgRu2ZQp4Z)
 
-### [8. Bugs and Errors](https://eloquentjavascript.net/08_error.html)
+### 8. Bugs and Errors
 
 * Enable strict mode by writing the following line at the beginning of a file or function body:
 
@@ -182,6 +182,10 @@ Inheritance:
 
 * [Calling constructors defined with `class` keyword without `new` will always result in an error](https://eloquentjavascript.net/08_error.html#p_WGJIyAOZ/i)
 * Use [TypeScript](https://www.typescriptlang.org/)
+
+Debugging:
+
+* Inserting `debugger` statement will pause program execution when browser developer tools are open
 
 ## Further Reads
 
