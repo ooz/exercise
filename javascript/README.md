@@ -211,7 +211,18 @@ Exceptions:
 
 ### 9. Regular Expressions
 
+* [Two ways to define RegEx patterns](https://eloquentjavascript.net/09_regexp.html#h_5w4yGFJRYl):
 
+    ```js
+    let regExConstructor = new RegExp("abc");
+    let regExLiteral = /abc/;
+
+    let caseInsensitive = /abc/i;
+    ```
+
+* [Escaping rules vary by which definition style is used](https://eloquentjavascript.net/09_regexp.html#p_0mNIcPpslS), e.g. in RegEx literals `/` needs to be escaped, backslashes don't must not be escaped. In RegEx strings passed to `RegExp` constructor, backslashes need to be escaped.
+* `test` method checks whether a passed string matches the RegEx
+* [Common built-in character groups](https://eloquentjavascript.net/09_regexp.html#p_1qtYlDfA/1)
 
 
 ## Further Reads
