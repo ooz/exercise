@@ -187,6 +187,26 @@ Debugging:
 
 * Inserting `debugger` statement will pause program execution when browser developer tools are open
 
+Exceptions:
+
+* Raising an exception:
+
+    ```js
+    throw new Error("message");
+    ```
+
+* Handling an exception:
+
+    ```js
+    try {
+        throwsException();
+    } catch (error) {
+
+    }
+    ```
+
+* [`Error` objects have `message` and `stack` properties](https://eloquentjavascript.net/08_error.html#p_lP6PP0CCrB)
+
 ## Further Reads
 
 * [WTF JS: List of tricky JavaScript examples](https://github.com/denysdovhan/wtfjs)
