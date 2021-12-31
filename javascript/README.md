@@ -201,11 +201,18 @@ Exceptions:
     try {
         throwsException();
     } catch (error) {
-
+    } finally { // Is always run
     }
     ```
 
 * [`Error` objects have `message` and `stack` properties](https://eloquentjavascript.net/08_error.html#p_lP6PP0CCrB)
+* [JS doesn't differentiate exception types (it's all just `Error`)](https://eloquentjavascript.net/08_error.html#p_3umLtBJgPo)
+* [However, defining own error types by extending `Error` and checking with `instanceof` is recommended](https://eloquentjavascript.net/08_error.html#p_qurSIk3pjE)
+
+### 9. Regular Expressions
+
+
+
 
 ## Further Reads
 
