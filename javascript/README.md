@@ -226,7 +226,7 @@ Exceptions:
 * String objects have a `match` method accepting a RegEx parameter that behaves like RegEx `match`
 * [Common built-in character groups](https://eloquentjavascript.net/09_regexp.html#p_1qtYlDfA/1)
 * [Group matching rules](https://eloquentjavascript.net/09_regexp.html#p_/9rdcJO9zZ)
-* `^` matches start of string, `$` matches end of string, `\\b` matches word boundary
+* `^` matches start of string, `$` matches end of string, `\b` matches word boundary
 
 [Date](https://eloquentjavascript.net/09_regexp.html#h_8U7L7LCU27):
 
