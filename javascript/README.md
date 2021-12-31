@@ -222,7 +222,15 @@ Exceptions:
 
 * [Escaping rules vary by which definition style is used](https://eloquentjavascript.net/09_regexp.html#p_0mNIcPpslS), e.g. in RegEx literals `/` needs to be escaped, backslashes don't must not be escaped. In RegEx strings passed to `RegExp` constructor, backslashes need to be escaped.
 * `test` method checks whether a passed string matches the RegEx
+* [`exec` method returns a match with `index` property or `null` if no match is found](https://eloquentjavascript.net/09_regexp.html#h_CV5XL/TADP). A match object looks like the matched string
+* String objects have a `match` method accepting a RegEx parameter that behaves like RegEx `match`
 * [Common built-in character groups](https://eloquentjavascript.net/09_regexp.html#p_1qtYlDfA/1)
+* [Group matching rules](https://eloquentjavascript.net/09_regexp.html#p_/9rdcJO9zZ)
+* `^` matches start of string, `$` matches end of string, `\\b` matches word boundary
+
+[Date](https://eloquentjavascript.net/09_regexp.html#h_8U7L7LCU27):
+
+* Month numbers start at 0, day numbers at 1
 
 
 ## Further Reads
