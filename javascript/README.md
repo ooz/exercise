@@ -217,7 +217,7 @@ Exceptions:
     let regExConstructor = new RegExp("abc");
     let regExLiteral = /abc/;
 
-    let caseInsensitive = /abc/i;
+    let caseInsensitiveFlag = /abc/i;
     ```
 
 * [Escaping rules vary by which definition style is used](https://eloquentjavascript.net/09_regexp.html#p_0mNIcPpslS), e.g. in RegEx literals `/` needs to be escaped, backslashes don't must not be escaped. In RegEx strings passed to `RegExp` constructor, backslashes need to be escaped.
@@ -227,10 +227,18 @@ Exceptions:
 * [Common built-in character groups](https://eloquentjavascript.net/09_regexp.html#p_1qtYlDfA/1)
 * [Group matching rules](https://eloquentjavascript.net/09_regexp.html#p_/9rdcJO9zZ)
 * `^` matches start of string, `$` matches end of string, `\b` matches word boundary
+* `.` matches any non-newline character, [if any character incl. newline needs to be matched, `[^]` can be used](https://eloquentjavascript.net/09_regexp.html#p_DkzBCJQQdu)
+* Repetition operators are greedy (match as much as possible) by default, [non-greedy (match as little as possible) ones are followed by a `?`](https://eloquentjavascript.net/09_regexp.html#p_eNtLSVH65f)
 
 [Date](https://eloquentjavascript.net/09_regexp.html#h_8U7L7LCU27):
 
 * Month numbers start at 0, day numbers at 1
+
+String `replace`:
+
+* Accepts RegEx as first argument and [even matched groups in the second argument](https://eloquentjavascript.net/09_regexp.html#p_/5YU/Qo2Np). [By default, just replaces the first occurence](https://eloquentjavascript.net/09_regexp.html#p_jjBKX9l81o)
+* To replace all occurences, end RegEx with `g` flag (similar to `i` flag above and other RegEx implementations)
+* [The second argument may also be a function applied for every replacement](https://eloquentjavascript.net/09_regexp.html#p_BpgnqwKFHn)
 
 
 ## Further Reads
