@@ -209,7 +209,7 @@ Exceptions:
 * [JS doesn't differentiate exception types (it's all just `Error`)](https://eloquentjavascript.net/08_error.html#p_3umLtBJgPo)
 * [However, defining own error types by extending `Error` and checking with `instanceof` is recommended](https://eloquentjavascript.net/08_error.html#p_qurSIk3pjE)
 
-### 9. Regular Expressions
+### 9. Regular Expressions ([Summary](https://eloquentjavascript.net/09_regexp.html#h_ErccPg/l98))
 
 * [Two ways to define RegEx patterns](https://eloquentjavascript.net/09_regexp.html#h_5w4yGFJRYl):
 
@@ -218,6 +218,7 @@ Exceptions:
     let regExLiteral = /abc/;
 
     let caseInsensitiveFlag = /abc/i;
+    let constructorFlags = new RegExp("abc", "giuy");
     ```
 
 * [Escaping rules vary by which definition style is used](https://eloquentjavascript.net/09_regexp.html#p_0mNIcPpslS), e.g. in RegEx literals `/` needs to be escaped, backslashes don't must not be escaped. In RegEx strings passed to `RegExp` constructor, backslashes need to be escaped.
@@ -229,6 +230,9 @@ Exceptions:
 * `^` matches start of string, `$` matches end of string, `\b` matches word boundary
 * `.` matches any non-newline character, [if any character incl. newline needs to be matched, `[^]` can be used](https://eloquentjavascript.net/09_regexp.html#p_DkzBCJQQdu)
 * Repetition operators are greedy (match as much as possible) by default, [non-greedy (match as little as possible) ones are followed by a `?`](https://eloquentjavascript.net/09_regexp.html#p_eNtLSVH65f)
+* [Sanitize input before constructing RegExp objects from user input](https://eloquentjavascript.net/09_regexp.html#p_UPAgEiKHfS)
+* [Looping over matches is possible](https://eloquentjavascript.net/09_regexp.html#i_m0fs21dHEg)
+* [Use `u` (unicode) flag to properly match non-ASCII characters](https://eloquentjavascript.net/09_regexp.html#h_+y54//b0l+)
 
 [Date](https://eloquentjavascript.net/09_regexp.html#h_8U7L7LCU27):
 
@@ -239,6 +243,17 @@ String `replace`:
 * Accepts RegEx as first argument and [even matched groups in the second argument](https://eloquentjavascript.net/09_regexp.html#p_/5YU/Qo2Np). [By default, just replaces the first occurence](https://eloquentjavascript.net/09_regexp.html#p_jjBKX9l81o)
 * To replace all occurences, end RegEx with `g` flag (similar to `i` flag above and other RegEx implementations)
 * [The second argument may also be a function applied for every replacement](https://eloquentjavascript.net/09_regexp.html#p_BpgnqwKFHn)
+
+String `search`:
+
+* Like `indexOf`, but searching for first position matching pattern
+* [Searching for `lastIndex` is tricky](https://eloquentjavascript.net/09_regexp.html#h_duFTd2hqd0), `y` is "sticky" flag (= RegEx must be found starting at lastIndex, by default: from beginning of string)
+
+[Example: parse INI file](https://eloquentjavascript.net/09_regexp.html#h_RGsf6ah1EY)
+
+### 10. Modules
+
+https://eloquentjavascript.net/10_modules.html
 
 
 ## Further Reads
