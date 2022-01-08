@@ -253,7 +253,24 @@ String `search`:
 
 ### 10. Modules
 
-https://eloquentjavascript.net/10_modules.html
+* [Use `Function` as a safe alternative to `eval` if data needs to be executed as code](https://eloquentjavascript.net/10_modules.html#p_wzjzmC3uLa)
+* [`require` and `exports` come from CommonJS and is used by Node.js](https://eloquentjavascript.net/10_modules.html#h_N33QHgUxbG)
+* [Modern JS has `import` and `export` built-in](https://eloquentjavascript.net/10_modules.html#p_fGE1JkAJHH)
+* `export default` specifies the module's main export which may not even have a name
+
+`ini` and `dijkstrajs` packages from NPM are mentioned.
+
+### 11. Asynchronous Programming
+
+https://eloquentjavascript.net/11_async.html
+
+### 12. Project: A Programming Language
+
+https://eloquentjavascript.net/12_language.html
+
+### 13. JavaScript and the Browser
+
+https://eloquentjavascript.net/13_browser.html
 
 
 ## Further Reads
