@@ -262,7 +262,13 @@ String `search`:
 
 ### 11. Asynchronous Programming
 
-https://eloquentjavascript.net/11_async.html
+* `setTimeout(callback, delayInMs)`
+
+Promises:
+
+* [`Promise`: object which is executed may produce a value at some time in the future](https://eloquentjavascript.net/11_async.html#p_c7IGxt0qcZ)
+* `Promise.resolve` wraps a value in a Promise
+* `then` method gets the value produced by the Promise, applies the passed callback function and produces another Promise. This way, `then` and callbacks can be chained (without confusing callback nesting)
 
 ### 12. Project: A Programming Language
 
