@@ -269,16 +269,53 @@ Promises:
 * [`Promise`: object which is executed may produce a value at some time in the future](https://eloquentjavascript.net/11_async.html#p_c7IGxt0qcZ)
 * `Promise.resolve` wraps a value in a Promise
 * `then` method gets the value produced by the Promise, applies the passed callback function and produces another Promise. This way, `then` and callbacks can be chained (without confusing callback nesting)
+* [`Promise` constructor accepts a function which is immediately called with a resolve function as an argument](https://eloquentjavascript.net/11_async.html#p_sPGdi+3o75)
+* [`Promise.reject` creates a Promise failure](https://eloquentjavascript.net/11_async.html#p_/Duy2d2EJl)
+* `catch` gets the reason why the Promise failed and returns a Promise, similar to `then` for the non-erroneous case
+* The `catch` handler may also be registered as the second optional argument to `then`, for convenience
 
-### 12. Project: A Programming Language
+paused at https://eloquentjavascript.net/11_async.html#h_o8Vlf60I8f
 
-https://eloquentjavascript.net/12_language.html
 
-### 13. JavaScript and the Browser
+### [12. Project: A Programming Language](https://eloquentjavascript.net/12_language.html)
 
-https://eloquentjavascript.net/13_browser.html
+### [13. JavaScript and the Browser](https://eloquentjavascript.net/13_browser.html)
+
+* Basics on TCP, client-server, URL structure, HTTP, HTML, how to include JS in HTML
+
+### [14. The Document Object Model](https://eloquentjavascript.net/14_dom.html)
+
+* DOM, Trees
+* [`document` is the DOM root, `document.documentElement` the enclosing `<html>` tag](https://eloquentjavascript.net/14_dom.html#p_ltiXfOMPcl)
+* [Each DOM node has a `nodeType` property](https://eloquentjavascript.net/14_dom.html#p_f2BdWNSlpJ)
+* [`childNodes` property is of `NodeList` type stemming from DOM standardization](https://eloquentjavascript.net/14_dom.html#p_feaMhbBocX)
+* [childNodes, firstChild, lastChild, previousSibling, nextSibling, parentNode visualized](https://eloquentjavascript.net/14_dom.html#h_ShZPVipWw/)
+* [`children` property contains only element child nodes](https://eloquentjavascript.net/14_dom.html#p_EXYoCGtRP4)
+* `nodeValue` of a text node contains its text
+
+[Finding elements:](https://eloquentjavascript.net/14_dom.html#h_jS5BEpmLY0)
+
+* All element nodes have `getElementsByTagName`, e.g. `document.body`
+* `document.getElementById`
+* `getElementsByClassName`
+
+[Changing the document:](https://eloquentjavascript.net/14_dom.html#h_npiFAJENvT)
+
+* `remove`, `appendChild`, `insertBefore`
+* Inserting/appending an existing node will first remove it and then insert it at the new position
+* [`replaceChild`](https://eloquentjavascript.net/14_dom.html#p_PHkpqBpgHX)
+* [`document.createTextNode`](https://eloquentjavascript.net/14_dom.html#p_zMqlQBb7H1)
+* [`Array.from`](https://eloquentjavascript.net/14_dom.html#p_H+4G9MqWPh)
+* [`document.createElement`](https://eloquentjavascript.net/14_dom.html#p_2LO1OJVEk3)
+* Use `getAttribute` and `setAttribute` in combination with custom attributes (e.g. `data-something`), standard attributes may directly be accessed as properties
+* The `class` attribute is accessed with `className` property or `getAttribute("class")`
+* [`offsetWidth`, `offsetHeight`, `clientWidth`, `clientHeight` and `getBoundingClientRect`, `pageXOffset`, `pageYOffset` for position/size of HTML elements](https://eloquentjavascript.net/14_dom.html#h_lyrY2KUDl7)
+
+paused at
+https://eloquentjavascript.net/14_dom.html#h_pmUmF/LHme
 
 
 ## Further Reads
 
 * [WTF JS: List of tricky JavaScript examples](https://github.com/denysdovhan/wtfjs)
+* [Installing nvm and node.js](https://phoenixnap.com/kb/install-latest-node-js-and-nmp-on-ubuntu)
