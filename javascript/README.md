@@ -311,11 +311,17 @@ paused at https://eloquentjavascript.net/11_async.html#h_o8Vlf60I8f
 * The `class` attribute is accessed with `className` property or `getAttribute("class")`
 * [`offsetWidth`, `offsetHeight`, `clientWidth`, `clientHeight` and `getBoundingClientRect`, `pageXOffset`, `pageYOffset` for position/size of HTML elements](https://eloquentjavascript.net/14_dom.html#h_lyrY2KUDl7)
 
-paused at
-https://eloquentjavascript.net/14_dom.html#h_pmUmF/LHme
+Styling/CSS:
 
+* [Accessing an element's `style` property](https://eloquentjavascript.net/14_dom.html#p_HcAoKCgOCF)
+* [Rule precedence and specificity](https://eloquentjavascript.net/14_dom.html#p_7kmWmOHAMA)
+* [Query selectors and `document.querySelectorAll` (returning a NodeList) and `document.querySelector` (returning just the first match)](https://eloquentjavascript.net/14_dom.html#h_5ooQzToxht)
+
+paused at
+https://eloquentjavascript.net/14_dom.html#h_MAsyozbjjZ
 
 ## Further Reads
 
 * [WTF JS: List of tricky JavaScript examples](https://github.com/denysdovhan/wtfjs)
 * [Installing nvm and node.js](https://phoenixnap.com/kb/install-latest-node-js-and-nmp-on-ubuntu)
+* [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
