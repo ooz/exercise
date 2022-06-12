@@ -316,9 +316,13 @@ Styling/CSS:
 * [Accessing an element's `style` property](https://eloquentjavascript.net/14_dom.html#p_HcAoKCgOCF)
 * [Rule precedence and specificity](https://eloquentjavascript.net/14_dom.html#p_7kmWmOHAMA)
 * [Query selectors and `document.querySelectorAll` (returning a NodeList) and `document.querySelector` (returning just the first match)](https://eloquentjavascript.net/14_dom.html#h_5ooQzToxht)
+* [`static`, `relative` and `absolute` position explained](https://eloquentjavascript.net/14_dom.html#h_MAsyozbjjZ)
+* [Animation using `requestAnimationFrame`](https://eloquentjavascript.net/14_dom.html#p_TEJWNXCk6K)
 
-paused at
-https://eloquentjavascript.net/14_dom.html#h_MAsyozbjjZ
+### [15. Handling Events](https://eloquentjavascript.net/15_event.html)
+
+
+
 
 ## Further Reads
 
