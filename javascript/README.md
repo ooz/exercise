@@ -321,7 +321,35 @@ Styling/CSS:
 
 ### [15. Handling Events](https://eloquentjavascript.net/15_event.html)
 
+* [`addEventListener("click", handler)`](https://eloquentjavascript.net/15_event.html#c_z0Q59PvLev) or use the [`onclick` attribute](https://eloquentjavascript.net/15_event.html#p_nXR5M/glIi)
+* [`removeEventListener(handler)`](https://eloquentjavascript.net/15_event.html#p_kTdN4mDFS6)
+* [Event handlers get passed an event object which differs by event `type`](https://eloquentjavascript.net/15_event.html#h_0d6qd0WrDY)
 
+[Propagation](https://eloquentjavascript.net/15_event.html#h_NEhx0cDpml)
+
+* By default, events on children will also trigger events on the parent nodes
+* The more specific handler is triggered first and events propagate "outward"
+* [Call `stopPropagation()` on the event object to stop propagation](https://eloquentjavascript.net/15_event.html#p_unHabXBzty)
+* Use `target` property of a event object [refers to the node where the event originated](https://eloquentjavascript.net/15_event.html#p_NocTrrs2K+)
+
+[Default actions](https://eloquentjavascript.net/15_event.html#h_GaHJsztrot), e.g. right click is context menu, down arrow is scrolling down
+
+* JS event handlers are triggered before the default actions
+* Call `preventDefault()` on the event object
+
+[Key events](https://eloquentjavascript.net/15_event.html#h_974t15Z9oa)
+
+* `keydown`, `keyup` events. `keydown` also fires again every time the key repeats
+* [`shiftKey`, `ctrlKey`, `altKey` and `metaKey` properties](https://eloquentjavascript.net/15_event.html#p_4cdQPevWxW)
+* [Use `tabindex` attribute to enable focus for a DOM node](https://eloquentjavascript.net/15_event.html#p_EHGULml9MQ)
+
+Event types:
+
+* `click`, `mousedown`, `mouseup`, `dblclick`, `mousemove`
+* `keydown`, `keyup`
+* `touchstart`, `touchmove`, `touchend`, [`touches` property](https://eloquentjavascript.net/15_event.html#p_IHGyrDKsGS)
+* [`scroll`](https://eloquentjavascript.net/15_event.html#h_xGSp7W5DAZ)
+* [`focus`](https://eloquentjavascript.net/15_event.html#h_NoKd+BgJRm)
 
 
 ## Further Reads
