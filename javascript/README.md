@@ -331,6 +331,7 @@ Styling/CSS:
 * The more specific handler is triggered first and events propagate "outward"
 * [Call `stopPropagation()` on the event object to stop propagation](https://eloquentjavascript.net/15_event.html#p_unHabXBzty)
 * Use `target` property of a event object [refers to the node where the event originated](https://eloquentjavascript.net/15_event.html#p_NocTrrs2K+)
+* [`focus` and `blur` events do not propagate](https://eloquentjavascript.net/15_event.html#p_rU6XEBvIwF), [`load` event don't propagate either](https://eloquentjavascript.net/15_event.html#p_SqGooUkpJY)
 
 [Default actions](https://eloquentjavascript.net/15_event.html#h_GaHJsztrot), e.g. right click is context menu, down arrow is scrolling down
 
@@ -343,14 +344,35 @@ Styling/CSS:
 * [`shiftKey`, `ctrlKey`, `altKey` and `metaKey` properties](https://eloquentjavascript.net/15_event.html#p_4cdQPevWxW)
 * [Use `tabindex` attribute to enable focus for a DOM node](https://eloquentjavascript.net/15_event.html#p_EHGULml9MQ)
 
-Event types:
+Event types
 
 * `click`, `mousedown`, `mouseup`, `dblclick`, `mousemove`
 * `keydown`, `keyup`
 * `touchstart`, `touchmove`, `touchend`, [`touches` property](https://eloquentjavascript.net/15_event.html#p_IHGyrDKsGS)
 * [`scroll`](https://eloquentjavascript.net/15_event.html#h_xGSp7W5DAZ)
-* [`focus`](https://eloquentjavascript.net/15_event.html#h_NoKd+BgJRm)
+* [`focus`](https://eloquentjavascript.net/15_event.html#h_NoKd+BgJRm), `blur`
+* [`load` event](https://eloquentjavascript.net/15_event.html#h_NmV8RP8lpt) on window and document.body objects
+* [`beforeunload`](https://eloquentjavascript.net/15_event.html#p_41hBiFLDEt)
 
+[Web workers](https://eloquentjavascript.net/15_event.html#p_KfmkFMZHYK)
+
+* Use to offload long-running computations to separate threads
+* Communication happens via messages
+* [`Worker` class and `postMessage` method](https://eloquentjavascript.net/15_event.html#c_FgmodjGwd9)
+* Messages are JSON copies
+
+Timers
+
+* [`clearTimeout(timer)`](https://eloquentjavascript.net/15_event.html#p_FeJ5k8rGCc) to delete a timer created with `setTimeout`
+* `cancelAnimationFrame` similarly canceles the object returned by `requestAnimationFrame`
+* `setInterval` and `clearInterval`
+* [Use `setTimeout` to "debounce" rapidly firing events](https://eloquentjavascript.net/15_event.html#p_CvRYtJPZwz) like `mousemove` or `scroll`
+
+### 17. [Drawing on Canvas](https://eloquentjavascript.net/17_canvas.html)
+
+### 18. [HTTP and Forms](https://eloquentjavascript.net/18_http.html)
+
+### 20. [Node.js](https://eloquentjavascript.net/20_node.html)
 
 ## Further Reads
 
