@@ -372,6 +372,10 @@ Timers
 
 ### 18. [HTTP and Forms](https://eloquentjavascript.net/18_http.html)
 
+* [`encodeURIComponent` and `decodeURIComponent`](https://eloquentjavascript.net/18_http.html#c_v2cBL8Tnwf)
+* [Use `fetch` to make HTTP requests](https://eloquentjavascript.net/18_http.html#h_1Iqv5okrKE)
+
+
 ### 20. [Node.js](https://eloquentjavascript.net/20_node.html)
 
 ## Further Reads
