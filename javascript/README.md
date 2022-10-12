@@ -374,6 +374,12 @@ Timers
 
 * [`encodeURIComponent` and `decodeURIComponent`](https://eloquentjavascript.net/18_http.html#c_v2cBL8Tnwf)
 * [Use `fetch` to make HTTP requests](https://eloquentjavascript.net/18_http.html#h_1Iqv5okrKE)
+* [Various `input` `type`s with examples: `text`, `password`, `checkbox`, `radio`, and `file`](https://eloquentjavascript.net/18_http.html#p_Rhphckn33e). Textarea and select+option tags
+* [Form fields fire a `change` event when their value changes](https://eloquentjavascript.net/18_http.html#p_RNW9gGQ0uZ). For text fields, this is after the field loses focus. [`input` event is fired for any character change](https://eloquentjavascript.net/18_http.html#p_7ehU5cu5aF)
+* Use methods `focus` to focus keyboard input on an element, `blur` to remove focus
+* [`document.activeElement` points to the currently focused element](https://eloquentjavascript.net/18_http.html#p_bTNSIbb+d4)
+* Use `autofocus` and `tabindex` attributes. [A `tabindex=-1` skips over a normally focusable element](https://eloquentjavascript.net/18_http.html#p_F/Js9FpFgt)
+* [Form `submit` event](https://eloquentjavascript.net/18_http.html#p_MVbboPCoBM)
 
 
 ### 20. [Node.js](https://eloquentjavascript.net/20_node.html)
