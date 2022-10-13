@@ -380,7 +380,10 @@ Timers
 * [`document.activeElement` points to the currently focused element](https://eloquentjavascript.net/18_http.html#p_bTNSIbb+d4)
 * Use `autofocus` and `tabindex` attributes. [A `tabindex=-1` skips over a normally focusable element](https://eloquentjavascript.net/18_http.html#p_F/Js9FpFgt)
 * [Form `submit` event](https://eloquentjavascript.net/18_http.html#p_MVbboPCoBM)
-
+* [Use `FileReader` to read content of file(s)](https://eloquentjavascript.net/18_http.html#c_NWBXf4dpgg)
+* [Use `localStorage` as client-side key-value store](https://eloquentjavascript.net/18_http.html#p_tijRqdmE+T)
+* [`{[name]: ""}` creates an object with the dynamic property named `name`](https://eloquentjavascript.net/18_http.html#p_KLQOhbE5S6)
+* `sessionStorage` is like `localStorage` except it is cleared end of session (browser is closed)
 
 ### 20. [Node.js](https://eloquentjavascript.net/20_node.html)
 
