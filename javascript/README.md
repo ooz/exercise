@@ -387,6 +387,16 @@ Timers
 
 ### 20. [Node.js](https://eloquentjavascript.net/20_node.html)
 
+Read the entire docs at https://nodejs.org/en/docs/
+
+* `process.exit(0)`, `process.argv`
+* ["All the standard JavaScript global bindings, such as Array, Math, and JSON, are also present in Node’s environment. Browser-related functionality, such as document or prompt, is not."](https://eloquentjavascript.net/20_node.html#p_ols5jgMHp4)
+* [`readFile`](https://eloquentjavascript.net/20_node.html#p_75RFSIQwdU), `writeFile`
+
+HTTP module
+
+* [Basic http server](https://eloquentjavascript.net/20_node.html#p_5AqaLQsq5V), [basic http client](https://eloquentjavascript.net/20_node.html#p_sg2xBFD57S)
+
 ## Further Reads
 
 * [WTF JS: List of tricky JavaScript examples](https://github.com/denysdovhan/wtfjs)
