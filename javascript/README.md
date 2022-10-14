@@ -395,7 +395,11 @@ Read the entire docs at https://nodejs.org/en/docs/
 
 HTTP module
 
-* [Basic http server](https://eloquentjavascript.net/20_node.html#p_5AqaLQsq5V), [basic http client](https://eloquentjavascript.net/20_node.html#p_sg2xBFD57S)
+* [Basic http server](https://eloquentjavascript.net/20_node.html#p_5AqaLQsq5V), [basic http client](https://eloquentjavascript.net/20_node.html#p_sg2xBFD57S), but use wrapper packages from npm instead
+
+Streams
+
+paused at https://eloquentjavascript.net/20_node.html#h_dJhdomfGgD
 
 ## Further Reads
 
