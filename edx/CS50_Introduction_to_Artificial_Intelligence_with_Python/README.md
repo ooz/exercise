@@ -49,3 +49,57 @@ A star is optimal if:
 * **Evaluation function**: function that estimates the expected utility of the game from a given state
 
 ## 1. Knowledge
+
+* **Sentence**: an assertion about the world in a knowledge representation language
+* Propositional logic, propositional symbols
+* **Model**: assignment of a truth value to every propositional symbol (a "possible world")
+* **Knowledge base**: a set of sentences known by a knowledge-based agent
+* Entailment
+* **Inference**: the process of deriving new sentences from old ones
+* **Inference algorithms**: does a knowledge base entail a sentence?
+
+### Model Checking
+
+* Enumerate all possible models and check for which the query is true
+
+### Inference rules
+
+* Modus Ponens
+* And Elimination
+* Double Negation Elimination
+* Implication Elimination
+* Biconditional Elimination
+* De Morgan's Law
+* Distributive Property
+* Inference by resolution
+* Factoring
+
+### Theorem Proving as a search problem
+
+* Initial state: starting knowledge base
+* Actions: inference rules
+* Transition model: new knowledge base after inference
+* Goal test: check statement we're trying to prove
+* Path cost function: number of steps in proof
+
+### Normal forms
+
+* **Clause**: a disjunction (or-chain) of literals
+* **Conjunctive normal form (CNF)**: logical sentence that is a conjunction (and-chain) of clauses
+    - Eliminate biconditionals
+    - Eliminate implications
+    - Move not inwards (De Morgan's Laws)
+    - Use distributive law
+
+### Inference by Resolution
+
+* To determine if KB entails statement: Check if (KB and not statement) is a contradiction (by trying to produce the empty clause ("false"))
+    - If so, then KB entails statement
+    - Otherwise, no entailment
+
+### First-Order Logic
+
+* Constant symbol, predicate symbol (functions)
+* Universal quantification ("all")
+* Existential quantification ("exists")
+
