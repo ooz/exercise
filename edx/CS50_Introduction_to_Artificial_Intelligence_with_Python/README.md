@@ -103,3 +103,56 @@ A star is optimal if:
 * Universal quantification ("all")
 * Existential quantification ("exists")
 
+## 2. Uncertainty
+
+### Probability
+
+* Possible worlds *w*
+* Probability of possible world: 0 <= *P(w)* <= 1
+* The sum of all probabilities of all possible worlds is 1
+* Unconditional, conditional probability: *P(a|b) = P(a and b) / P(b)*, *P(a and b) = P(b)P(a|b)*, *P(a and b) = P(a)P(b|a)*
+* Random variable, domain of values (e.g. dice roll: 1, 2, 3, 4, 5, 6)
+* Probability distribution
+* Independence: *P(a and b) = P(a)P(b)*
+
+Bayes' Rule: *P(b|a) = (P(a|b)P(b)) / P(a)*
+
+Knowing *P(visible effect | unknown cause)* we can calculate *P(unknown cause | visible effect)* using Bayes' Rule!
+
+* Joint probability, joint probability distribution
+* Conditional distribution is proportional to the joint probability
+* Negation: *P(not a) = 1 - P(a)*
+* Inclusion-Exclusion: *P(a or b) = P(a) + P(b) - P(a and b)*
+* Marginalization: *P(a) = P(a, b) + P(a, not b)* (*P(a, b)* is alternative notation for *P(a and b)*)
+* Conditioning: *P(a) = P(a|b)P(b) + P(a|not b)P(not b)*
+
+* **Bayesian network**: data structure that represents the dependencies among random variables.
+  It is a directed graph, each node represents a random variable. Arrow from *X* to *Y* means *X* is a parent of *Y*.
+  Each node *X* has a probability distribution *P(X | Parents(X))*
+
+### Inference
+
+* Query *X*: variable for which to compute distribution
+* Evidence variables *E*: observed variables for event *e*
+* Hidden variables *Y*: non-evidence, non-query variable
+* Goal: calculate *P(X|e)*, calculate it with **inference by enumeration**
+* `pomegranate` library to model Bayesian networks
+* Approximate inference, sampling, likelihood weighting
+
+### Uncertainty over Time
+
+* **Markov assumption**: the current state depends on only a finite fixed number of previous states
+* **Markov chain**: sequence of random variables where the distribution of each variable follows the Markov assumption
+* **Hidden Markov model** or **sensor model**: Markov model for a system with hidden states that generate some observed event
+* **Sensor Markov assumption**: the evidence variable depends only on the corresponding state
+
+Possible tasks:
+
+|Task|Definition|
+|---|---|
+|**filtering**|given observations from start until now, calculate distribution for current state|
+|**prediction**|given observations from start until now, calculate distribution for a future state|
+|**smoothing**|given observations from start until now, calculate distribution for past state|
+|**most likely explanation**|given observations from start until now, calculate most likely sequence of states|
+
+
