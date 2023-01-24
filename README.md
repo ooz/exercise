@@ -7,6 +7,11 @@
 
 * [Eloquent JavaScript](javascript/)
 
+## Course Notes
+
+* [CS50 Introduction to AI with Python](edx/CS50_Introduction_to_Artificial_Intelligence_with_Python/)
+* [Full stack open](fullstack/)
+
 ## Resources
 
 * [Overview of basic algorithms and data structures](https://github.com/jbhattac/interviews)
