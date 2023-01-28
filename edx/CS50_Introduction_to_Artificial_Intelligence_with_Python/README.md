@@ -155,4 +155,60 @@ Possible tasks:
 |**smoothing**|given observations from start until now, calculate distribution for past state|
 |**most likely explanation**|given observations from start until now, calculate most likely sequence of states|
 
+## 3. Optimization
+
+... choosing the best option from a set of options.
+
+* **Local search**: search algorithms that maintain a single node and search by moving to a neighboring node
+* State-space landscape, global maximum (objective function), global minimum (cost function)
+* **Hill climbing**, local maxima/minima, flat local maximum, shoulder
+
+Hill climbing variants:
+
+|Variant|Definition|
+|---|---|
+|steepest-ascent|choose the highest-valued neighbor|
+|stochastic|choose randomly from higher-valued neighbors|
+|first-choice|choose the first higher-valued neighbor|
+|random-restart|conduct hill climbing multiple times|
+|local beam search|chooses the *k* highest-valued neighbors|
+
+### Simulated Annealing
+
+* Early on, higher "temperature": more likely to accept neighbors that are worse than current state
+* Later on, lower "temperature": less likely to accept neighbors that are worse than current state
+
+### Traveling Salesman Problem
+
+NP complete problem
+
+### Linear Programming
+
+* Minimize a cost function (or maximize an objective function)
+* With constraints
+* With bounds for each variable
+
+Algorithms: Simplex, Interior-Point (use `scipy.linprog`)
+
+### Constraint Satisfaction
+
+* Constraint graph
+* Constraint satisfaction problem: variables, domains, constraints (hard, soft)
+* Unary constraint (between variable and domain), binary constraint (between variables)
+* **Node consistency**: when all the values in a variable's domain satisfy the variable's unary constraints
+* **Arc consistency**: when all the values in a variable's domain satisfy the variable's binary constraints
+* To make *X* arc-consistent with respect to *Y*, remove elements from *X*'s domain until every choice for *X* has a possible choice for *Y*
+* AC-3 algorithm makes a constraint satisfaction problem (CSP) arc-consistent
+* CSPs as search problems, backtracking search
+
+Inference
+
+* **Maintaining arc-consistency**: algorithm for enforcing arc-consistency every time we make a new assignment
+* When we make a new assignment to *X*, call AC-3, starting with a queue of all arcs (*Y, X*) where *Y* is a neighbor of *X*
+
+* Minimum remaining values (MRV) heuristic: select the variable that has the smallest domain
+* Degree heuristic: select the variable that has the highest degree
+
+* Least-constraining values heuristic: return variables in order by number of choices that are ruled out for neighboring variables. Then try least-constraining first
+
 
