@@ -211,4 +211,69 @@ Inference
 
 * Least-constraining values heuristic: return variables in order by number of choices that are ruled out for neighboring variables. Then try least-constraining first
 
+## 4. Learning
+
+### Supervised learning
+
+...given a data set of input-output pairs, learn a function to map inputs to outputs
+
+* **Classification**: supervised learning task of learning a function mapping an input point to a discrete category
+
+Hypothesis-function *h*
+
+* **Nearest-neighbor classification**: algorithm that, given an input, chooses the class of the nearest data point to that input
+* **k-nearest-neighbor classification**: ... chooses the most common class of the *k* nearest data points to that input
+
+#### Linear regression
+
+* Machine learning: estimate the weight vector
+* Dot product of weight vector and input vector
+
+* **Perceptron learning rule**, alpha is the learning rate
+* **Threshold function**, hard threshold, soft threshold (logistic function)
+
+#### Support Vector Machines
+
+* **Maximum margin separator**: boundary that maximizes the distance between any of the data points
+* Finds boundaries which aren't linear through using higher dimensions
+
+#### Regression
+
+...supervised learning task of learning a function mapping an input point to a continuous value
+
+#### Evaluating Hypotheses
+
+Optimization problem of minimizing a **loss function** (function that expresses how poorly our hypothesis performs).
+
+* 0-1 loss function
+* L1 loss function
+* L2 loss function (penalizes worse predictions, outliers)
+
+Problem: **overfitting**: a model that fits too closely to a particular data set and therefore may fail to generalize to future data
+
+Solution: **regularization**: penalizing hypotheses that are more complex to favor simpler, more general hypotheses
+
+* **holdout cross-validation**: splitting data into a training set and a test set, such that learning happens on the training set and is evaluated on the test set
+* **k-fold cross-validation**: splitting data into *k* sets, and experimenting *k* times, using each set as a test set once, and using remaining data as training set
+
+### Reinforcement learning
+
+...given a set of rewards or punishments, learn what actions to take in the future.
+
+* **Markov decision process**: model for decision-making, representing states, actions and their rewards
+* **Q-learning**: method for learning a function *Q(s, a)*, estimate of the value of performing action *a* in state *s*
+* **Greedy decision-making**: when in state *s*, choose action *a* with highest *Q(s, a)*
+
+Problem: Explore vs. Exploit (knowledge AI already has)
+
+Solution: *epsilon*-greedy algorithm
+
+* **function approximation**: approximating *Q(s, a)*, often by a function combining various features, rather than storing one value for every state-action pair
+
+### Unsupervised learning
+
+...given input data without any additional feedback, learn patterns
+
+* **Clustering**: organizing a set of objects into groups in such a way that similar objects tend to be in the same group
+* **k-means clustering**: algorithm for clustering data based on repeatedly assigning points to clusters and updating those clusters' centers
 
