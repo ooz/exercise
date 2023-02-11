@@ -277,3 +277,41 @@ Solution: *epsilon*-greedy algorithm
 * **Clustering**: organizing a set of objects into groups in such a way that similar objects tend to be in the same group
 * **k-means clustering**: algorithm for clustering data based on repeatedly assigning points to clusters and updating those clusters' centers
 
+## 5. Neural Networks
+
+Popular activation functions:
+
+* Step function
+* Logistic sigmoid
+* Rectified linear unit (ReLU)
+
+* **Gradient descent**: algorithm for minimizing loss when training a neural network (gradient for all data points)
+* **Stochastic gradient descent**: gradient for 1 data point
+* **Mini-batch gradient descent**: gradient for a small batch of data points
+
+* **Perceptron**: only capable of learning linearly separable decision boundary
+* **Multilayer neural network**: artificial neural network with an input layer, an output layer and at least one hidden layer
+* **Backpropagation**: algorithm for training neural networks with hidden layers
+* **Deep neural networks**: neural network with multiple hidden layers
+
+Strategies to combat overfitting of neural networks:
+
+* **dropout**: temporarily removing units (nodes, selected at random) from a neural network to prevent over-reliance on certain units
+
+playground.tensorflow.org
+
+### Computer vision
+
+* **Image convolution**: applying a filter that adds each pixel value of an image to its neighbors, weighted according to a kernel matrix
+* **Kernel matrix**, e.g. for edge detection
+* **Pooling**: reducing the size of an input by sampling from regions in the input
+* **Max-pooling**: choose maximum value for each region
+
+* **Convolutional neural network**: neural network that uses convolution, usually for analyzing images
+
+* **Feed-forward neural network**: neural network that has connections only in one direction
+* **Recurrent neural network**: neural network that generates output that feeds back into its own inputs
+* **One-to-many relationship**
+
+
+
