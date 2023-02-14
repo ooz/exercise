@@ -313,5 +313,42 @@ playground.tensorflow.org
 * **Recurrent neural network**: neural network that generates output that feeds back into its own inputs
 * **One-to-many relationship**
 
+## 6. Language
+
+* Syntax, Semantics, ambiguity in both
+* Formal grammar
+* Context-free grammar, terminal symbols, non-terminal symbols, syntax tree
+
+* *n*-gram: a contiguous sequence of *n* items from a sample of text
+* word *n*-gram
+* unigram (1 item), bigram (2 items), trigram (3 items)
+* tokenization, word tokenization, sentence tokenization
+* Markov-chain
+
+* Text categorization, sentiment analysis
+* **bag-of-words model**: model that represents text as an unordered collection of words
+* Naive bayes, bayes' rule
+* **additive smoothing**: adding a value *alpha* to each value in our distribution to smooth the data (avoids words with 0 probability)
+* **Laplace smoothing**: adding 1 to each value in our distribution: pretending we've seen each value one more time than we actually have
+
+* **Information retrieval**: the task of finding relevant documents in response to a user query
+* **Topic modeling**: models for discovering the topics for a set of documents
+* **Term frequency**: number of times a term appears in a document
+* **function words**: words that have little meaning on their own, but are used to grammatically connect other words
+* **content words**: words that carry meaning independently
+* **inverse document frequency**: measure of how common or rare a word is across documents
+* **tf-idf**: ranking of what words are important in a document by multiplying term frequency (TF) by inverse document frequency (IDF)
+
+### Semantics
+
+* **Information extraction**: the task of extracting knowledge from documents
+* WordNet, built-in in nltk
+* **one-hot representation**: representation of meaning as a vector with a single 1, and with other values as 0
+* **distribution representation**: representation of meaning distributed across multiple values
+
+"You shall know a word by the company it keeps." - J. R. Firth, 1957
+
+* **word2vec**: model for generating word vectors
+* **skip-gram architecture**: neural network architecture for predicting context words given a target word
 
 
