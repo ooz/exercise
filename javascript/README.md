@@ -403,6 +403,7 @@ paused at https://eloquentjavascript.net/20_node.html#h_dJhdomfGgD
 
 ## Further Reads
 
+* [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 * [WTF JS: List of tricky JavaScript examples](https://github.com/denysdovhan/wtfjs)
 * [Installing nvm and node.js](https://phoenixnap.com/kb/install-latest-node-js-and-nmp-on-ubuntu)
 * [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
