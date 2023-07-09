@@ -260,7 +260,7 @@ String `search`:
 
 `ini` and `dijkstrajs` packages from NPM are mentioned.
 
-### 11. Asynchronous Programming
+### [11. Asynchronous Programming](https://eloquentjavascript.net/11_async.html)
 
 * `setTimeout(callback, delayInMs)`
 
@@ -273,6 +273,7 @@ Promises:
 * [`Promise.reject` creates a Promise failure](https://eloquentjavascript.net/11_async.html#p_/Duy2d2EJl)
 * `catch` gets the reason why the Promise failed and returns a Promise, similar to `then` for the non-erroneous case
 * The `catch` handler may also be registered as the second optional argument to `then`, for convenience
+* `Promise.all`
 
 paused at https://eloquentjavascript.net/11_async.html#h_o8Vlf60I8f
 
